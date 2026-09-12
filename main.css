@@ -14,19 +14,27 @@
   color: var(--font-color);
 }
 
+html {
+  width: 100%;
+  max-width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   position: relative;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* ==================== Container ==================== */
 
 .container {
   width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -865,6 +873,23 @@ header ul li a {
 /* ==================== Mobile Responsive ==================== */
 
 @media (max-width: 1060px) {
+  html,
+  body,
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  header,
+  .first,
+  .info-section,
+  #skills,
+  #projects,
+  #contact {
+    width: 100%;
+    max-width: 100%;
+  }
+
   header ul {
     display: none;
   }
@@ -907,8 +932,39 @@ header ul li a {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .nav-list {
     width: 60%;
+  }
+
+  .hero,
+  .info-cards,
+  .skills,
+  .project-container {
+    max-width: 100%;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .project-card .vid-box,
+  .project-card .project-info {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .section-title,
