@@ -383,6 +383,7 @@ header ul li a {
   padding-top: 60px;
   position: relative;
   border-bottom: 1px solid;
+  
 }
 
 #skills > h1 {
@@ -398,7 +399,7 @@ header ul li a {
   margin: auto;
   height: 60vh;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   overflow-y: auto;
 }
@@ -410,7 +411,7 @@ header ul li a {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 80%;
 }
 
 .skills div p:first-of-type {
@@ -444,12 +445,12 @@ header ul li a {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 100%;
+  width: 99%;
   height: 69vh;
   z-index: 10;
   padding: 30px 0;
   background-color: #0000005f;
-  overflow-y: auto;
+  overflow-y:auto;
   position: relative;
 }
 
@@ -562,7 +563,7 @@ header ul li a {
 
 /* ==================== Custom Vertical Scrollbar ==================== */
 
-.project-container::-webkit-scrollbar,
+#projects .project-container::-webkit-scrollbar,
 .info-cards::-webkit-scrollbar,
 .hero::-webkit-scrollbar,
 .skills::-webkit-scrollbar {
@@ -573,14 +574,14 @@ header ul li a {
   height: 8px;
 }
 
-.project-container::-webkit-scrollbar-track,
+#projects .project-container::-webkit-scrollbar-track,
 .info-cards::-webkit-scrollbar-track,
 .hero::-webkit-scrollbar-track,
 .skills::-webkit-scrollbar-track {
   background: var(--main-color);
 }
 
-.project-container::-webkit-scrollbar-thumb,
+#projects .project-container::-webkit-scrollbar-thumb,
 .info-cards::-webkit-scrollbar-thumb,
 .hero::-webkit-scrollbar-thumb,
 .skills::-webkit-scrollbar-thumb {
@@ -594,7 +595,7 @@ header ul li a {
   box-shadow: 0 0 10px var(--font-color);
 }
 
-.project-container::-webkit-scrollbar-thumb:hover,
+#projects .project-container::-webkit-scrollbar-thumb:hover,
 .info-cards::-webkit-scrollbar-thumb:hover,
 .hero::-webkit-scrollbar-thumb:hover,
 .skills::-webkit-scrollbar-thumb:hover {
